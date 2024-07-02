@@ -8,20 +8,111 @@ Python’s combination of simplicity, powerful libraries, and versatility across
 
 2. Installing Python on MacOS:
 Steps:
-- check python version `python --version`
+- Open your teminal
+- Check python version `python --version`
+- Install python with homebrew `brew install python`
+- add path to bash file
 
 3. Python Syntax and Semantics:
+ - print("Hello, World!")
+This is as simple as you can go with python. This is a built-in function from python. Inside the parenthesis is the messaga or string that we want to be dispalyed on the console.
 
 4. Data Types and Variables:
+Numeric: int, float, complex
+Sequence: list, tuple, range
+Mapping: dict
+Set: set
+
+Boolean: bool
+name = "Pholisa" # String
+x = 10  # Integer
+isCar = False # Boolean
+y = 3.14  # float
+my_list = [1, 2, 3]  # list
+my_dict = {"name": "Nathan", "age": 27}  # dict
+
 
 5. Control Structures:
+conditional statements helps when you are making decisions in any program
+
+Conditinal statement example:
+age = 18
+
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+Loops help whern you are looking for a spefic condition to be met.
+Loops Example:
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+
 
 6. Functions in Python:
+functions are blocks of organized, reusable code that perform a specific task. They allow you to break down your program into smaller, manageable parts
+They help make your code organized and help with reuseability
+
+def sum(a, b):
+    return a + b
+result = sum(1, 2)  # Calls the sum function
 
 7. Lists and Dictionaries:
+Lists: Ordered, mutable collections of elements.
+Dictionaries: Unordered, mutable collections of key-value pairs.
+
+# Create a list of numbers
+numbers = [1, 2, 3, 4, 5]
+
+# Create a dictionary with key-value pairs
+my_dict = {
+    'name': 'Alice',
+    'age': 30,
+    'city': 'New York',
+    'email': 'alice@example.com'
+}
 
 8. Exception Handling:
+allows you to handle runtime errors gracefully, preventing your program from crashing when unexpected situations occur
+
+try:
+    # Code that may raise an exception
+except Exception as e:
+    # Code to handle the exception
+finally:
+    # Code that always runs, regardless of whether an exception is raised
+
+# Function to divide two numbers
+def divide_numbers(a, b):
+    try:
+        result = a / b
+        print(f"Result of {a} divided by {b} is: {result}")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed!")
+    finally:
+        print("Division operation completed.\n")
+
+# Test cases
+divide_numbers(10, 2)    # Normal division
+divide_numbers(8, 0)     # Division by zero error
+divide_numbers(15, 3)    # Normal division again
+
 
 9. Modules and Packages:
+Modules: Files containing Python code that can be imported into other scripts.
+Packages: Collections of related modules.
+
+import math  # Imports the math module
+result = math.sqrt(2)  # Uses a function from the math module
 
 10. File I/O:
+
+# Read a file
+with open("file.txt", "r") as f:
+    content = f.read()
+
+# Write to a file
+with open("file.txt", "w") as f:
+    f.write("Hello, World!")
